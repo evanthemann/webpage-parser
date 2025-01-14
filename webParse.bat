@@ -1,1 +1,1 @@
-cscript "C:\Users\emann\fetch_6.js"
+cscript "C:\Users\username\fetch_6.js"
