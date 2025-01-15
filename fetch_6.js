@@ -39,7 +39,10 @@ try {
 
         // Generate local HTML file
         var fso = new ActiveXObject("Scripting.FileSystemObject");
-        var fileName = title.split(" ")[0] + ".html"; // First word of the title as the file name
+        
+	var firstWord = title.split(" ")[0];
+	var fileName = makeSafeFileName(firstWord) + ".html";	
+	    
         var file = fso.CreateTextFile(fileName, true);
 
         // Write HTML content
