@@ -59,7 +59,7 @@ try {
         file.WriteLine(".button { margin-left: 10px; padding: 5px 10px; cursor: pointer; }");
         file.WriteLine("</style>");
         file.WriteLine("<script>");
-        file.WriteLine("function copyToClipboard(text) { navigator.clipboard.writeText(text); alert('Copied: ' + text); }");
+        file.WriteLine("function copyToClipboard(text) { navigator.clipboard.writeText(text); }");
         file.WriteLine("</script>");
         file.WriteLine("</head>");
         file.WriteLine("<body>");
