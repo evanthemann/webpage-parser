@@ -83,3 +83,8 @@ try {
 } catch (error) {
     WScript.Echo("An error occurred: " + error.message);
 }
+
+// Function to make a string safe for filenames
+function makeSafeFileName(name) {
+    return name.replace(/[^a-zA-Z0-9_-]/g, "_"); // Replace all invalid characters with "_"
+}
